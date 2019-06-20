@@ -1,0 +1,32 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<app-navbar></app-navbar>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <label>Profile</label>
+    <br>
+
+
+    <form>
+      <input type="text" id="username" class="fadeIn second" name="username" placeholder="username" [(ngModel)]="user.username">
+      <!--<input type="text" id="password" class="fadeIn third" name="password" placeholder="password" [(ngModel)]="user.password">
+      <input type="text" id="repeatedPassword" class="fadeIn third" name="repeatedPassword" placeholder="repeat password" [(ngModel)]="repeatedPassword" >-->
+
+      <input type="text" id="firstName" class="fadeIn fourth" name="firstName" placeholder="first name" [(ngModel)]="user.firstName">
+      <input type="text" id="lastName" class="fadeIn fifth" name="lastName" placeholder="last name" [(ngModel)]="user.lastName">
+      <input type="text" id="city" class="fadeIn sixth" name="city" placeholder="city" [(ngModel)]="user.city">
+      <input type="text" id="phoneNumber" class="fadeIn seventh" name="phoneNumber" placeholder="phone number" [(ngModel)]="user.phoneNumber">
+
+
+
+      <input type="submit" class="fadeIn fourth" value="Update profile" >
+    </form>
+
+
+
+  </div>
+</div>
+

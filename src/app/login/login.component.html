@@ -1,0 +1,25 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<app-navbar></app-navbar>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <label>Sign in</label>
+    <br>
+
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="username" [(ngModel)]="username">
+      <input type="password" id="password" class="fadeIn third" name="login" placeholder="password" [(ngModel)]="password">
+      <input type="submit" class="fadeIn fourth" value="Log In" (click)="login()" >
+    </form>
+
+    <!-- Remind Passowrd
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div> -->
+
+  </div>
+</div>
